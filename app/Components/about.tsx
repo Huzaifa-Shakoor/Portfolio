@@ -34,7 +34,7 @@ export default function About() {
             <div className="flex gap-6 sm:gap-8">
               {/* Instagram */}
               <a
-                href="https://www.instagram.com"
+                href="https://www.instagram.com/huzaifa_2493/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-500 hover:text-pink-600 transition duration-300 transform hover:scale-110"
@@ -44,7 +44,7 @@ export default function About() {
 
               {/* Facebook */}
               <a
-                href="https://www.facebook.com"
+                href="https://www.facebook.com/share/65igsMrmE3eMSUxF/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-500 hover:text-blue-600 transition duration-300 transform hover:scale-110"
@@ -64,7 +64,7 @@ export default function About() {
 
               {/* Email */}
               <a
-                href="mailto:youremail@example.com"
+                href="mailto:huzaifa2493@gmail.com"
                 className="text-gray-500 hover:text-red-600 transition duration-300 transform hover:scale-110"
               >
                 <FaEnvelope size={30} />
