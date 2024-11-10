@@ -5,14 +5,14 @@ export default function About() {
   return (
     <section className="group hover:bg-gray-990 transition duration-500 ease-in-out">
       {/* Container */}
-      <div className="mx-auto w-full max-w-7xl px-5 py-12 md:px-10 md:py-16 lg:py-20">
+      <div className="mx-auto w-full max-w-7xl px-5 py-12 md:px-10 md:py-10 lg:py-20">
         {/* Component */}
         <div className="grid gap-12 sm:gap-20 lg:grid-cols-2">
           {/* Content */}
           <div className="flex flex-col items-start gap-6 group-hover:text-white">
             {/* Title */}
             <h1 className="text-4xl font-bold text-white md:text-6xl transition duration-300 transform group-hover:text-white animate__fadeInUp">
-              Muhammad Huzaifa
+              About Me
             </h1>
             <p className="text-sm mb-6 text-gray-500 sm:text-xl group-hover:text-white transition duration-300 animate__fadeInUp">
               I am Fullstack Developer
@@ -72,12 +72,12 @@ export default function About() {
             </div>
           </div>
           {/* Image */}
-          <div className="rounded-full  mb-[120px] transition duration-300 transform hover:scale-105">
+          <div className="rounded-full text-center  mb-[120px] transition duration-300 transform hover:scale-105">
             {/* Replace <img> with <Image /> */}
             <Image
               src="/huizaifa2.jpg"
               alt="Muhammad Huzaifa"
-              className="inline-block shadow-[0px_0px_100px_lightblue] rounded-full animate__fadeInUp"
+              className="inline-block  shadow-[0px_0px_100px_lightblue] rounded-full animate__fadeInUp"
               width={500}  // Specify the width
               height={500} // Specify the height
             />

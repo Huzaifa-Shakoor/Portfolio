@@ -31,12 +31,12 @@ export default function Resume() {
   ];
 
   return (
-    <section id="resume-section" className="py-10 text-white">
+    <section id="resume-section" className="py-2 text-white">
       <div className="container mx-auto px-5">
         {/* Resume Header */}
         <div className="text-center mb-10 animate__animated animate__fadeIn">
           <h1 className="text-4xl font-extrabold text-white mb-2 transition-transform transform hover:scale-105 hover:text-blue-400">
-            Muhammad Huzaifa
+            Resume
           </h1>
           <p className="text-xl text-white">Full Stack Developer</p>
           <p className="text-gray-400 mt-2">
@@ -85,7 +85,7 @@ export default function Resume() {
                       href="mailto:huzaifa2493@gmail.com"
                       className="text-blue-400 hover:text-white transition-colors duration-300"
                     >
-                    Click Here
+                      Click Here
                     </a>
                   </div>
                 </div>
@@ -172,6 +172,68 @@ export default function Resume() {
                       <li>Built modern web applications using PHP and Laravel.</li>
                       <li>Worked on performance optimization and debugging.</li>
                       <li>Contributed to designing and maintaining database schema and relationships.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Education Section */}
+            <div className="mb-10 animate__animated animate__fadeIn animate__delay-3s">
+              <h2 className="text-3xl font-semibold text-white mb-4">Education</h2>
+              <div className="space-y-6">
+                {/* Degree 1 */}
+                <div className="flex items-center mb-6 hover:scale-105 transition-all duration-300 ease-in-out">
+                  <div className="w-16 h-16 bg-purple-600 text-white rounded-full flex justify-center items-center transition-all duration-300 ease-in-out hover:bg-purple-700">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-10 h-10 md:w-12 md:h-12 lg:w-16 lg:h-16" // Larger size for larger screens
+                      fill="none"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M19 20v-2H5v2H3v-4h2V6a9 9 0 1 1 18 0v10h2v4h-2z" />
+                    </svg>
+                  </div>
+                  <div className="ml-6">
+                    <h3 className="text-2xl font-bold text-white">Bachelors in Computer Network and Security</h3>
+                    <p className="text-gray-400">SIR SYED UNIVERSITY OF ENGINEERING AND TECHNOLOGY</p>
+                    <p className="text-sm text-gray-500">2024 - Continue</p>
+                    <ul className="list-disc pl-6 mt-2 text-gray-300">
+                      <li></li>
+                      <li>Focused on full-stack web development and database management.</li>
+                      <li>Ethical Hacker</li>
+                      <li>Expert in Network Security System</li>
+                    </ul>
+                  </div>
+                </div>
+                {/* Degree 2 */}
+                <div className="flex items-center mb-6 hover:scale-105 transition-all duration-300 ease-in-out">
+                  <div className="w-16 h-16 bg-yellow-600 text-white rounded-full flex justify-center items-center transition-all duration-300 ease-in-out hover:bg-yellow-700">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-10 h-10 md:w-12 md:h-12 lg:w-16 lg:h-16" // Larger size for larger screens
+                      fill="none"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M12 2a4 4 0 0 1 0 8 4 4 0 0 1 0-8zm0 10c-4 0-6 2-6 6v2h12v-2c0-4-2-6-6-6z" />
+                    </svg>
+                  </div>
+                  <div className="ml-6">
+                    <h3 className="text-2xl font-bold text-white">Diploma in Software Engineering</h3>
+                    <p className="text-gray-400">APTECH, PAKISTAN</p>
+                    <p className="text-sm text-gray-500">2022 - Continue</p>
+                    <ul className="list-disc pl-6 mt-2 text-gray-300">
+                      <li>Specialized in full-stack web development using React.js, Node.js, and PHP Laravel.</li>
+                      <li>Completed projects on e-commerce platforms and personal websites.</li>
+                      <li>Worked on advanced front-end techniques including responsive design and animation.</li>
                     </ul>
                   </div>
                 </div>

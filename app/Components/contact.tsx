@@ -57,7 +57,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact-form py-16 shadow-2xl rounded-xl max-w-3xl mx-auto p-8 bg-gradient-to-r from-black to-[#2f4f6e] animate__animated animate__fadeIn">
+    <div className="contact-form py-8 shadow-2xl rounded-xl max-w-3xl mx-auto p-8 bg-gradient-to-r from-black to-[#2f4f6e] animate__animated animate__fadeIn">
       <h2 className="text-center text-4xl font-bold text-white mb-8">Contact Me</h2>
       <form onSubmit={handleSubmit} className="space-y-6">
         {/* Name Input */}

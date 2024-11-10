@@ -1,6 +1,7 @@
 import About from './Components/about';
 import Contact from './Components/contact';
 import Hero from './Components/hero';  
+import Projects from './Components/project';
 import Resume from './Components/resume';
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
       <Hero />
       <About />
       <Resume />
+      <Projects />
       <Contact />
     </>
   );
