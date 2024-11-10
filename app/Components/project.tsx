@@ -1,4 +1,4 @@
-// src/components/Projects.tsx
+
 "use client"
 import { FaGithub, FaLink } from 'react-icons/fa';
 import AOS from 'aos'; 
