@@ -75,7 +75,7 @@ export default function About() {
           <div className="rounded-full text-center  mb-[120px] transition duration-300 transform hover:scale-105">
             {/* Replace <img> with <Image /> */}
             <Image
-              src="/huizaifa2.jpg"
+              src="/huzaifa2.jpg"
               alt="Muhammad Huzaifa"
               className="inline-block  shadow-[0px_0px_100px_lightblue] rounded-full animate__fadeInUp"
               width={500}  // Specify the width
