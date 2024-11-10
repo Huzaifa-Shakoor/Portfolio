@@ -20,7 +20,7 @@ const Contact = () => {
     const templateParams = {
       from_name: name, // Name of the sender (user)
       from_email: email, // User's email address (sender email)
-      subject: subject, 
+      subject: subject,
       message: message,
     };
 
@@ -30,7 +30,7 @@ const Contact = () => {
 
     try {
       // Sending email using EmailJS
-      const result = await emailjs.send(serviceID, templateID, templateParams, userID);
+      await emailjs.send(serviceID, templateID, templateParams, userID);
 
       setStatus("Message sent successfully!");
       setFormData({ name: "", email: "", subject: "", message: "" });
@@ -110,8 +110,7 @@ const Contact = () => {
 
         {/* Message Input */}
         <div className="mb-4">
-          <input
-            type="text"
+          <textarea
             name="message"
             value={formData.message}
             onChange={handleChange}

@@ -1,4 +1,5 @@
 import { FaInstagram, FaFacebookF, FaLinkedinIn, FaEnvelope } from 'react-icons/fa';
+import Image from 'next/image'; // Import Image from next/image
 
 export default function About() {
   return (
@@ -71,11 +72,14 @@ export default function About() {
             </div>
           </div>
           {/* Image */}
-          <div className="rounded-full shadow-[0px_0px_100px_lightblue] mb-[120px] transition duration-300 transform hover:scale-105">
-            <img
+          <div className="rounded-full  mb-[120px] transition duration-300 transform hover:scale-105">
+            {/* Replace <img> with <Image /> */}
+            <Image
               src="/huizaifa2.jpg"
               alt="Muhammad Huzaifa"
-              className="inline-block rounded-full animate__fadeInUp"
+              className="inline-block shadow-[0px_0px_100px_lightblue] rounded-full animate__fadeInUp"
+              width={500}  // Specify the width
+              height={500} // Specify the height
             />
           </div>
         </div>

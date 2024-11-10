@@ -3,14 +3,13 @@ import React, { useEffect, useState } from "react";
 import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";  // <-- Correct imports
 
 export default function Resume() {
-  const [inView, setInView] = useState(false);
-
+  // Removed `inView` state as it's not being used.
   useEffect(() => {
     const handleScroll = () => {
       const resumeSection = document.getElementById("resume-section");
       const rect = resumeSection?.getBoundingClientRect();
       if (rect && rect.top < window.innerHeight && rect.bottom >= 0) {
-        setInView(true);
+        // You can implement any action when the section comes into view
       }
     };
 
@@ -20,16 +19,15 @@ export default function Resume() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Data for progress bars (skills)
   const skills = [
-    { name: "HTML", value: 90 },
+    { name: "HTML", value: 100 },
     { name: "CSS", value: 95 },
     { name: "JavaScript", value: 90 },
+    { name: "MySQL", value: 90 },
     { name: "PHP & LARAVEL", value: 95 },
     { name: "React.js", value: 95 },
     { name: "Next.js", value: 70 },
     { name: "TypeScript", value: 90 },
-    { name: "Core", value: 60 },
   ];
 
   return (
@@ -176,53 +174,6 @@ export default function Resume() {
                       <li>Contributed to designing and maintaining database schema and relationships.</li>
                     </ul>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div className="mb-10 animate__animated animate__fadeIn animate__delay-3s">
-              <h2 className="text-3xl font-semibold text-white mb-4">Education</h2>
-           
-              {/* second education */}
-              <div className="flex items-center mb-6 hover:scale-105 transition-all duration-300 ease-in-out">
-                <div className="w-16 h-16 bg-yellow-500 text-white rounded-full flex justify-center items-center transition-all duration-300 ease-in-out hover:bg-yellow-600">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="w-10 h-10 md:w-12 md:h-12 lg:w-16 lg:h-16" // Increased size for larger screens, responsive
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-                  </svg>
-                </div>
-                <div className="ml-6">
-                  <h3 className="text-2xl font-bold text-white">Bachelor of Computer Network And Security</h3>
-                  <p className="text-gray-400">Sir Syed University of Engineering And Technology</p>
-                  <p className="text-sm text-gray-500">2023 - Present</p>
-                </div>
-              </div>
-              <div className="flex items-center mb-6 hover:scale-105 transition-all duration-300 ease-in-out">
-                <div className="w-16 h-16 bg-yellow-500 text-white rounded-full flex justify-center items-center transition-all duration-300 ease-in-out hover:bg-yellow-600">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="w-10 h-10 md:w-12 md:h-12 lg:w-16 lg:h-16" // Increased size for larger screens, responsive
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-                  </svg>
-                </div>
-                <div className="ml-6">
-                  <h3 className="text-2xl font-bold text-white">Diploma In Software Engineeering</h3>
-                  <p className="text-gray-400">Aptech Pakistan</p>
-                  <p className="text-sm text-gray-500">2022 - Present</p>
                 </div>
               </div>
             </div>
